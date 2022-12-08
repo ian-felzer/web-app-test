@@ -190,3 +190,7 @@ if __name__ == "__main__":
     #import logging
     #logging.basicConfig(filename='/home/ak8257/error.log',level=logging.DEBUG)
     app.run(debug = True)
+
+    app.jinja_env.auto_reload = True
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
+    app.run(debug=True, host='0.0.0.0')

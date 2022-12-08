@@ -6,7 +6,9 @@
     <hr>
 
     {% for todo in todos %}
-    <h3 class="title">{{todo.title}}, due at {{ todo.dueDate }} {{todo.dueTime}}</h3>
+
+    <div class="card">
+    <h3 class="title">{{todo.title}} <br> Due on:  {{ todo.dueDate }} at {{todo.dueTime}}</h3>
     <div class="toDoItem">
         <img class="checkbox" src="static/images/blank-check-box.png" alt="" width="20px" height="20px">
         <div class="innerText">
@@ -14,11 +16,15 @@
         </div>
     </div>
     <br>
+
+
     <a class="black btn btn-success" href="{{ url_for('edit',mongoid=todo._id)}}">Edit</a> | <a class="black" href="{{ url_for('delete',mongoid=todo._id)}}">Delete</a>
     <br><br>
     {%endfor%}
 
 {% endblock %}
+
+</div>
     
 
 
