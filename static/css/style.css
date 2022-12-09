@@ -210,6 +210,23 @@ span {
 }
 
 #signupB {
+
+    display: flex;
+
+
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 300;
+    background-color: #1c89ff;
+
+    width: 200px;
+    height: 38px;
+    
+    
+    border-radius: 18px;
+
+
+
     margin-left: 30%;
     margin-bottom: 20px;
 }
@@ -255,6 +272,32 @@ label {
     padding: 10px 25px 10px 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+
+.contain {
+    background-color: white;
+    margin-top: 20px;
+    
+
+    background-color: lightgray;
+}
+
+
+#signUpSpan {
+    text-align: center;
+    margin-left: 32%;
+    margin-top: 6px;
+}
+
+#buttonReturn{
+    position: fixed;
+    bottom: 10px;
+    left: 250px;
+
+
 }
 
 

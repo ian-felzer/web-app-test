@@ -55,3 +55,23 @@ for (let i=0;i<button.length;i++){
         console.log('clicked');
     })
 }
+
+
+
+
+let signupB = document.getElementById('signupB');
+
+
+let signupForm = document.getElementById('signupForm');
+
+if (signupB && signupForm != null) {
+
+    signupB.addEventListener('click',function(){
+
+        signupForm.submit();
+        console.log(signupForm.value);
+    
+    })
+
+}
+

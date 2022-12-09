@@ -10,7 +10,7 @@
 <p class="error"></p>
 
 <div id="form1">
-    <form method="POST" action="{{ url_for('process_signup') }}">
+    <form id="signupForm" method="POST" action="{{ url_for('process_signup') }}">
 
         <label for="firstName"><b>First Name</b></label>
         <input class='form1' type="text" placeholder="Enter First Name" name="firstName" required>
@@ -30,7 +30,9 @@
         <label for="psw-repeat"><b>Repeat Password</b></label>
         <input class='form1' type="password" placeholder="Repeat Password" name="psw-repeat" required>
     
-        <button id="signupB" type="submit" class="signup-btn">Sign Up</button>
+        <!--   <button id="signupB" type="submit" class="signup-btn">Sign Up</button> -->
+
+        <a href="#" id="signupB" class="signup-btn"> <span id="signUpSpan"> Sign Up </span> </a>
     
     </form>
 
